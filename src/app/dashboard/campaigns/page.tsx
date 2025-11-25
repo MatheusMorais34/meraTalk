@@ -19,6 +19,7 @@ import {
   Search,
   Trash2,
 } from 'lucide-react';
+import Link from 'next/link';
 
 const campaigns = [
   {
@@ -131,9 +132,11 @@ export default function CampaignsPage() {
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input placeholder="Buscar campanhas..." className="pl-9" />
             </div>
-            <Button>
-                <PlusCircle className="mr-2 h-4 w-4" />
-                Nova Campanha
+            <Button asChild>
+                <Link href="/dashboard/campaigns/new">
+                    <PlusCircle className="mr-2 h-4 w-4" />
+                    Nova Campanha
+                </Link>
             </Button>
         </div>
       </div>
