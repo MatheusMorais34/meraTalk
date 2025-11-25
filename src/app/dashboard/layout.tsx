@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 const dashboardNavLinks = [
   { href: '/dashboard', label: 'Visão Geral', icon: LayoutGrid },
-  { href: '#', label: 'Campanhas', icon: Phone },
+  { href: '/dashboard/campaigns', label: 'Campanhas', icon: Phone },
   { href: '#', label: 'Relatórios', icon: BarChart3 },
   { href: '#', label: 'Configurações', icon: Settings },
 ];
